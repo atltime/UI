@@ -7,7 +7,7 @@ checkbtn.addEventListener('click', () => {
  check369();
 });
 
-function check369() {
+function check369(e) {
  const number = document.querySelector('#number').value;
  let intArr = Array.from(String(number));
  let clap = '';
@@ -18,7 +18,13 @@ function check369() {
    clap += ' 박수';
   }
  }
-
+ if (number > 100) {
+  result.innerHTML = '앗! 100 이하의 숫자만 입력 가능해요!';
+  e.preventDefault();
+ } else if (number < 1) {
+  result.innerHTML = '앗! 마이너스는 어려워요!';
+  e.preventDefault();
+ }
  if (clap == '') {
   result.innerHTML = '그냥 조용히 계세요 >.<';
  } else {

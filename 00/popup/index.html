@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="popup.js" defer></script>
+ </head>
+ <body>
+  <div class="container">
+   <p>로그인 해볼까요? <button id="goLogin" class="btn default" type="button" aria-label="로그인 하기">GO</button></p>
+  </div>
+
+  <div class="popup" id="popup">
+   <div class="inner">
+    <div class="inner-header">
+     <h1>로그인 테스트</h1>
+     <button class="btn transparent" id="close" type="button">닫기</button>
+    </div>
+    <form action="success.html">
+    <div class="inner-body">
+     <div class="form-box">
+      <label for="email">이메일</label>
+      <input type="email" id="email" class="form-control" />
+     </div>
+     <div class="form-box">
+      <label for="password">패스워드</label>
+      <input type="password" id="password" class="form-control" />
+     </div>
+    </div>
+    <div class="inner-footer">
+     <button class="btn red" id="send" type="submit">전송</button>
+    </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

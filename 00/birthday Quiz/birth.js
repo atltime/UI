@@ -12,9 +12,7 @@ check.addEventListener('click', (e) => {
   result.innerHTML = '입력을 하셔야 합니다 :)';
  } else if (answer == birthyear) {
   result.innerHTML = '정답입니다 :)';
-  return false;
  } else if (answer != birthyear) {
-  //   console.log(count);
   result.innerHTML = '아쉽네요 >.<';
 
   if (count >= 3) {

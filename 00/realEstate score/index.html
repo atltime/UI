@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="score.js" defer></script>
+ </head>
+ <body>
+  <div class="container-center">
+   <div class="card">
+    <div class="card-title">
+     <h1>시험 결과 발표</h1>
+    </div>
+    <div class="card-body">
+     <p><strong>*</strong> 과목별 점수를 입력해 합격 여부를 확인해 보세요</p>
+     <div class="form-box">
+      <label for="subject1">과목1</label>
+      <input type="number" min="0" max="100" step="5" class="form-control" id="subject1" />
+      <label for="subject2">과목2</label>
+      <input type="number" min="0" max="100" step="5" class="form-control" id="subject2" />
+      <button class="btn red" type="submit" id="check">확인</button>
+     </div>
+     <div class="result" id="result"></div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

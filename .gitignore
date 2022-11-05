@@ -6,6 +6,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+*.css
 sass/
 
 # Icon must end with two \r

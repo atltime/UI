@@ -1,17 +1,18 @@
 'use strict';
 
 const checkbtn = document.querySelector('#check');
-const result = document.querySelector('#result');
 
-checkbtn.addEventListener('click', (e) => {
+checkbtn.addEventListener('click', () => {
  check369();
 });
 
-function check369(e) {
- const number = document.querySelector('#number').value;
- console.log(number);
- let intArr = Array.from(String(number));
+function check369() {
+ let number = document.querySelector('#number').value;
+ let num = Number(number);
+ console.log(typeof num);
+ let intArr = Array.from(number);
  let clap = '';
+ let result = document.querySelector('#result');
  //  console.log(intArr);
 
  for (let i = 0; i < intArr.length; i++) {
@@ -20,17 +21,14 @@ function check369(e) {
   }
  }
  if (number.length == 0) {
-  result.innerHTML = '아무 것도 입력하지 않았어요!';
-  e.preventDefault();
- } else if (number > 100) {
-  result.innerHTML = '100 이하의 숫자만 입력 가능해요!';
-  e.preventDefault();
- } else if (number <= 0) {
-  result.innerHTML = '앗! 정수 1부터 시작해요!';
-  e.preventDefault();
- } else if (number == '') {
   result.innerHTML = '숫자를 입력하지 않으셨어요 >.<';
-  e.preventDefault();
+  return false;
+ } else if (num > 100) {
+  result.innerHTML = '100 이하의 숫자만 입력 가능해요!';
+  return false;
+ } else if (num <= 0) {
+  result.innerHTML = '앗! 정수 1부터 시작해요!';
+  return false;
  }
  if (clap == '') {
   result.innerHTML = '그냥 조용히 계세요 >.<';

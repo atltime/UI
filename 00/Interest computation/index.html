@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이자율 계산</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="interest.js" defer></script>
+ </head>
+ <body>
+  <div class="container-center">
+   <div class="card">
+    <div class="card-title">
+     <h1>이자율 계산</h1>
+    </div>
+    <div class="card-body">
+     <p><strong>Q.</strong> 2년 후 총 예금액은 얼마가 될까요?( 만원 단위 )</p>
+     <div class="form-box">
+      <label for="deposit">예금액</label>
+      <input type="number" min="10000" step="10000" class="form-control" id="deposit" />
+      <button class="btn red" type="submit" id="check">확인</button>
+     </div>
+     <div class="result" id="result"></div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -3,12 +3,13 @@
 const checkbtn = document.querySelector('#check');
 const result = document.querySelector('#result');
 
-checkbtn.addEventListener('click', () => {
+checkbtn.addEventListener('click', (e) => {
  check369();
 });
 
 function check369(e) {
  const number = document.querySelector('#number').value;
+ console.log(number);
  let intArr = Array.from(String(number));
  let clap = '';
  //  console.log(intArr);
@@ -18,11 +19,17 @@ function check369(e) {
    clap += ' 박수';
   }
  }
- if (number > 100) {
-  result.innerHTML = '앗! 100 이하의 숫자만 입력 가능해요!';
+ if (number.length == 0) {
+  result.innerHTML = '아무 것도 입력하지 않았어요!';
   e.preventDefault();
- } else if (number < 1) {
-  result.innerHTML = '앗! 마이너스는 어려워요!';
+ } else if (number > 100) {
+  result.innerHTML = '100 이하의 숫자만 입력 가능해요!';
+  e.preventDefault();
+ } else if (number <= 0) {
+  result.innerHTML = '앗! 정수 1부터 시작해요!';
+  e.preventDefault();
+ } else if (number == '') {
+  result.innerHTML = '숫자를 입력하지 않으셨어요 >.<';
   e.preventDefault();
  }
  if (clap == '') {

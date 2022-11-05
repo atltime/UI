@@ -1,0 +1,17 @@
+#modeBadgeBtn {
+  cursor: pointer;
+}
+
+body.dark {
+  background-color: #000;
+}
+body.dark .bg-light {
+  background-color: #000 !important;
+}
+body.dark .bg-primary {
+  background-color: #212529 !important;
+}
+body.dark .text-muted,
+body.dark .fw-light {
+  color: #fff !important;
+}

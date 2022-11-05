@@ -43,16 +43,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   padding: 6px;
 }
 .form-box label {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   font-weight: 600;
 }
 .form-box .form-control {
@@ -118,8 +118,9 @@ body {
   margin: 8px 0;
 }
 .card-body .btn {
-  float: right;
-  width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }

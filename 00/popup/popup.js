@@ -18,14 +18,20 @@ close.addEventListener('click', () => {
 });
 
 send.addEventListener('click', (e) => {
- if (document.querySelector('#email').value == '') {
+ let userEmailAddr = document.querySelector('#email').value;
+ let userPassword = document.querySelector('#password').value;
+ if (userEmailAddr == '') {
   e.preventDefault();
   alert('이메일을 입력하세요');
- } else if (document.querySelector('#password').value == '') {
+ } else if (userPassword == '') {
+  console.log(userEmailAddr);
   e.preventDefault();
   alert('패스워드를 입력하세요');
- } else if (document.querySelector('#password').value.length < 6) {
+ } else if (userPassword.length < 6) {
   e.preventDefault();
   alert('비밀번호가 너무 짧습니다.');
+ } else if (/[A-Z]/.test(userPassword) == false) {
+  e.preventDefault();
+  alert('대문자가 하나 포함되어야 합니다.');
  }
 });

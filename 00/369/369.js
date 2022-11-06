@@ -22,15 +22,11 @@ function check369() {
  }
  if (number.length == 0) {
   result.innerHTML = '숫자를 입력하지 않으셨어요 >.<';
-  return false;
  } else if (num > 100) {
   result.innerHTML = '100 이하의 숫자만 입력 가능해요!';
-  return false;
  } else if (num <= 0) {
   result.innerHTML = '앗! 정수 1부터 시작해요!';
-  return false;
- }
- if (clap == '') {
+ } else if (clap == '') {
   result.innerHTML = '그냥 조용히 계세요 >.<';
  } else {
   result.innerHTML = `

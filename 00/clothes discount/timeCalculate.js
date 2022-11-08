@@ -11,7 +11,7 @@ check.addEventListener('click', function () {
  let userDiscount = discount(userPrice, true);
 
  result1.innerHTML = `
-   할인 ${userDiscount}원을 받아 실구매가 ${userPrice - userDiscount}원에 구매하실 수 있습니다.
+   할인 ${userDiscount}달러를 받아 실구매가 ${userPrice - userDiscount}달러에 구매하실 수 있습니다.
  `;
 });
 

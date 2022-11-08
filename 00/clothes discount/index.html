@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>간단한 퀴즈</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="timeCalculate.js" defer></script>
+ </head>
+ <body>
+  <div class="container-center">
+   <div class="card" style="margin-bottom: 10px">
+    <div class="card-title">
+     <h1>할인율 계산</h1>
+    </div>
+    <div class="card-body">
+     <p><strong>Q.</strong> 할인가는?</p>
+     <div class="form-box">
+      <label for="price">판매가($)</label>
+      <input type="number" class="form-control" id="price" />
+      <button class="btn red" type="submit" id="check">확인</button>
+     </div>
+     <div class="result" id="result"></div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-title">
+     <h1>분과 초 ms단위로 계산</h1>
+    </div>
+    <div class="card-body">
+     <p><strong>Q.</strong> 다음 시간을 ms단위로 환산하면?</p>
+     <div class="form-box">
+      <label for="minutes">분</label>
+      <input type="number" class="form-control" id="minutes" />
+      <label for="seconds">초</label>
+      <input type="number" class="form-control" id="seconds" />
+      <button class="btn red" type="submit" id="check2">확인</button>
+     </div>
+     <div class="result" id="result2"></div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

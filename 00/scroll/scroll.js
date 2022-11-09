@@ -16,7 +16,7 @@ lorem.addEventListener('scroll', () => {
  }
 });
 
-// 현재페이지 끝까지 스크롤 체크
+// ㅌ버튼 누르면 위로
 const topBtn = document.querySelector('.top');
 let contH = document.querySelector('html').scrollHeight;
 // let contH = document.documentElement.scrollHeight; 똑같은 코드임
@@ -26,7 +26,7 @@ topBtn.addEventListener('click', () => {
  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 });
 
-// header scroll event
+// header 고정 이벤트
 window.addEventListener('scroll', function () {
  let y = window.scrollY;
  let headerH = document.querySelector('header').clientHeight;
@@ -40,10 +40,12 @@ window.addEventListener('scroll', function () {
   document.querySelector('header').classList.remove('fixed');
  }
 
+ // 페이지 끝까지 스크롤되면 자동으로 위로 보내기
  if (y + headerH > contH - headerH) {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
  }
 
+ // 현재 스크롤 된 양 바로 표시하기
  let diff = contH - pageH - headerH;
  let barWidth = (y / diff) * 100;
  blackbar.style.width = barWidth + '%';

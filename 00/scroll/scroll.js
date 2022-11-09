@@ -49,6 +49,5 @@ window.addEventListener('scroll', function () {
  let diff = contH - pageH - headerH;
  let barWidth = (y / diff) * 100;
  blackbar.style.width = barWidth + '%';
- console.log((blackbar.style.width = (diff / contH) * 100));
- console.log(`스크롤 위치는 ${y}, 브라우저 크기는 : ${pageH}, 컨텐츠 전체 길이는 : ${contH},현재 바의 넓이는 ${barWidth}%`);
+ //  console.log(`스크롤 위치는 ${y}, 브라우저 크기는 : ${pageH}, 컨텐츠 전체 길이는 : ${contH},현재 바의 넓이는 ${barWidth}%`);
 });

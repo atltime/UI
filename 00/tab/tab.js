@@ -1,34 +1,47 @@
-'use strict';
+// 'use strict';
+// let tabBtn = document.querySelectorAll('.tab-btn');
+// let tabContent = document.querySelectorAll('.tab-content');
 
-let tabBtn = document.querySelectorAll('.tab-btn');
-let tabContent = document.querySelectorAll('.tab-content');
+// tabBtn.forEach((el, idx) => {
+//  el.addEventListener('click', () => {
+//   removeTabClass(el);
+//   addTabClass(el, idx);
+//  });
+// });
 
-tabBtn.forEach((el, idx) => {
- el.addEventListener('click', () => {
-  removeTabClass();
-  el.classList.add('on');
-  tabContent[idx].classList.add('show');
- });
-});
+// function removeTabClass(el) {
+//  tabBtn.forEach((el) => {
+//   el.classList.remove('on');
+//  });
+//  tabContent.forEach((el) => {
+//   el.classList.remove('show');
+//  });
+// }
 
-function removeTabClass() {
- tabBtn.forEach((el) => {
-  el.classList.remove('on');
- });
- tabContent.forEach((el) => {
-  el.classList.remove('show');
- });
-}
+// function addTabClass(el, idx) {
+//  el.classList.add('on');
+//  tabContent[idx].classList.add('show');
+// }
 
 // jQuery라면
-// let $tabBtn = $('.tab-btn');
-// let $tabContent = $('.tab-content');
+let $tabBtn = $('.tab-btn');
+let $tabList = $('.tab-list');
+let $tabContent = $('.tab-content');
 
 // for (let i = 0; i < $tabBtn.length; i++) {
 //  $tabBtn.eq(i).on('click', function () {
-//   $tabBtn.removeClass('on');
-//   $tabBtn.eq(i).addClass('on');
-//   $tabContent.removeClass('show');
-//   $tabContent.eq(i).addClass('show');
+//   tabShow(i);
 //  });
 // }
+
+$tabList.click(function (e) {
+ let i = Number(e.target.dataset.id);
+ tabShow(i);
+});
+
+function tabShow(i) {
+ $tabBtn.removeClass('on');
+ $tabBtn.eq(i).addClass('on');
+ $tabContent.removeClass('show');
+ $tabContent.eq(i).addClass('show');
+}

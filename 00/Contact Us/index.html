@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <script src="contact.js" defer></script> -->
+ </head>
+ <body>
+  <p class="txt-tip align right"><span class="txt-red">*</span> 표시는 필수 입력 항목입니다.</p>
+  <table class="table-write mt15">
+   <caption>
+    <div>문의 작성 게시판</div>
+   </caption>
+   <colgroup>
+    <col style="width: 260px" />
+    <col />
+   </colgroup>
+   <tbody>
+    <tr>
+     <th><span aria-label="필수입력 작성">*</span>구분</th>
+     <td>
+      <input checked type="radio" name="ral" id="ral_1" />
+      <label for="ral_1" class="mr30">국내 유통처 입점 문의하기</label>
+      <input type="radio" name="ral" id="ral_2" />
+      <label for="ral_2">해외 수출 문의하기</label>
+     </td>
+    </tr>
+    <tr>
+     <th><span aria-label="필수입력 작성">*</span><label for="text_1">작성자</label></th>
+     <td>
+      <input type="text" id="text_1" />
+     </td>
+    </tr>
+    <tr>
+     <th><span aria-label="필수입력 작성">*</span>전화번호</th>
+     <td>
+      <select class="w150" aria-label="전화번호 앞자리">
+       <option>010</option>
+      </select>
+      -
+      <input type="tel" class="w150" aria-label="전화번호 중간자리" />
+      -
+      <input type="tel" class="w150" aria-label="전화번호 마지막자리" />
+     </td>
+    </tr>
+    <tr>
+     <th>이메일</th>
+     <td>
+      <input type="email" aria-label="이메일 아이디" />
+      @
+      <input type="email" aira-label="이메일 도메인" />
+      <select>
+       <option>메일계정선택</option>
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <th><span aria-label="필수입력 작성">*</span> <label for="txt1_2">제목</label></th>
+     <td>
+      <input type="text" id="txt1_2" class="w480" />
+     </td>
+    </tr>
+    <tr>
+     <th><span aria-label="필수입력 작성">*</span> <label for="txt1_3">내용</label></th>
+     <td>
+      <textarea id="txt1_3"></textarea>
+     </td>
+    </tr>
+    <tr>
+     <th><label for="files">첨부파일</label></th>
+     <td>
+      <input type="file" id="files" />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="mt20 align vm">
+   <input type="checkbox" id="chk1_1" /><label for="chk1_1" class="mr15">개인정보처리방침에 동의합니다.</label><button aria-label="개인정보처리방침 내용확인" class="btn-rule"></button>
+  </div>
+  <div class="align center mt80">
+   <button class="btn-complete">작성하기</button>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>출석부 명단 확인</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="find.js" defer></script>
+ </head>
+ <body>
+  <div class="container-center">
+   <div class="card">
+    <div class="card-title">
+     <h1>경성크리처 배역 확인</h1>
+    </div>
+    <div class="card-body">
+     <p><b>*</b> 궁금한 배역 이름을 입력하면 출연자 이름이 나와요.</p>
+     <div class="form-box">
+      <label for="name">배역</label>
+      <input type="text" class="form-control" id="name" />
+      <button class="btn red" type="submit" id="check">확인</button>
+     </div>
+     <div class="result" id="result"></div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

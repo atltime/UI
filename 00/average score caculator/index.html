@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>평균 점수 계산기</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="score.js" defer></script>
+ </head>
+ <body>
+  <div class="container-center">
+   <div class="card">
+    <div class="card-title">
+     <h1>평균 점수 계산기</h1>
+    </div>
+    <div class="card-body">
+     <p><strong>*</strong> 이번 회차 점수를 입력하면 평균 점수와 비교해드립니다.</p>
+     <div class="form-box normal">
+      <div>
+       <label for="time1">1회차</label>
+       <input type="number" class="form-control time" id="time1" disabled />
+      </div>
+      <div>
+       <label for="time2">2회차</label>
+       <input type="number" class="form-control time" id="time2" disabled />
+      </div>
+      <div>
+       <label for="time3">3회차</label>
+       <input type="number" class="form-control time" id="time3" disabled />
+      </div>
+      <div>
+       <label for="time4">4회차</label>
+       <input type="number" class="form-control time" id="time4" disabled />
+      </div>
+      <div>
+       <label for="time5">5회차</label>
+       <input type="number" class="form-control time" id="time5" disabled />
+      </div>
+      <div>
+       <label for="time6">6회차</label>
+       <input type="number" class="form-control time" id="time6" disabled />
+      </div>
+     </div>
+     <div class="form-box">
+      <label for="current">이번 회차</label>
+      <input type="number" min="0" max="100" step="5" class="form-control" id="current" />
+      <button class="btn red" type="submit" id="check">확인</button>
+     </div>
+     <div class="result" id="result"></div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

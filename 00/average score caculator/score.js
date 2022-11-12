@@ -41,7 +41,7 @@ function compareScores(scoreArray, currentScore) {
  if (currentScore > finalTotal) {
   let diff = currentScore - finalTotal;
   result.innerHTML = `
-    평균점수 ${finalTotal}보다 ${diff} 올랐어요. 화이팅입니다 ^0^
+    평균점수 ${finalTotal}보다 ${diff}점 올랐어요. 화이팅입니다 ^0^
   `;
  } else if (currentScore == finalTotal) {
   result.innerHTML = `
@@ -50,7 +50,7 @@ function compareScores(scoreArray, currentScore) {
  } else {
   let diff = finalTotal - currentScore;
   result.innerHTML = `
-    평균점수 ${finalTotal}보다 -${diff} 떨어졌네요. 재수 추천 >.<
+    평균점수 ${finalTotal}보다 -${diff}점 떨어졌네요. 재수 추천 >.<
   `;
  }
 }

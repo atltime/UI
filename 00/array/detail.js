@@ -24,15 +24,22 @@ let flowers = [
  },
 ];
 
-let img = document.querySelectorAll('.card img');
-let h5 = document.querySelectorAll('.card-body h5');
-let price = document.querySelectorAll('.card-body p>span');
+const cardGroup = document.querySelector('.card-group');
 
 for (let i = 0; i < flowers.length; i++) {
- img[i].src = flowers[i].img;
- img[i].alt = flowers[i].alt;
- h5[i].innerHTML = flowers[i].title;
- price[i].innerHTML = flowers[i].price;
+ let template = `
+    <div class="card">
+        <div class="img-box">
+            <img src="${flowers[i].img}" alt="${flowers[i].alt}" />
+        </div>
+        <div class="card-body">
+            <h5>${flowers[i].title}</h5>
+            <p>가격 : <span>${flowers[i].price}</span></p>
+            <button class="btn">주문하기</button>
+        </div>
+    </div>
+ `;
+ cardGroup.insertAdjacentHTML('beforeend', template);
 }
 
 let car = [
@@ -43,11 +50,12 @@ let car = [
 
 for (let i = 0; i < car.length; i++) {
  console.log(i);
- document.querySelector('.basic-table tbody').innerHTML = `
+ let template = `
  <tr>
     <td class="price">${car[i].name}</td>
     <td class="name">${car[i].price[i]}</td>
     <td class="color">${car[i].color}</td>
-</tr>
- `;
+</tr>`;
+
+ document.querySelector('.basic-table tbody').insertAdjacentHTML('beforeend', template);
 }

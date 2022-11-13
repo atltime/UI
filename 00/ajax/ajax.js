@@ -8,8 +8,35 @@ let products = [
 
 const cardRow = document.querySelector('#cardRow');
 const moreItemsBtn = document.querySelector('#moreItems');
+const sortByPrice = document.querySelector('#sortByPrice');
+const sortByName = document.querySelector('#sortByName');
+const sortUnder6 = document.querySelector('#sortUnder6');
 
 moreItems(products);
+sortByPrice.addEventListener('click', () => {
+ products.sort((a, b) => a.price - b.price);
+ cardRow.innerHTML = '';
+ moreItems(products);
+});
+sortByName.addEventListener('click', () => {
+ products.sort(function (a, b) {
+  if (a.title > b.title) {
+   return 1;
+  } else if (a.title == b.title) {
+   return 0;
+  } else {
+   return -1;
+  }
+ });
+ cardRow.innerHTML = '';
+ moreItems(products);
+});
+sortUnder6.addEventListener('click', () => {
+ let newProducts = products.filter((a) => a.price <= 60000);
+ //  console.log(newProducts);
+ cardRow.innerHTML = '';
+ moreItems(newProducts);
+});
 
 let count = 0;
 moreItemsBtn.addEventListener('click', () => {

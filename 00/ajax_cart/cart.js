@@ -5,7 +5,7 @@ showStorageCartList();
 const cartReset = document.querySelector('#cartReset');
 
 cartReset.addEventListener('click', () => {
- cartList.innerHTML = '장바구니가 비었습니다.';
+ cartList.innerHTML = '찜하신 상품이 없습니다.';
  localStorage.removeItem('cart');
 });
 

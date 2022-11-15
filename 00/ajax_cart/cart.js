@@ -26,6 +26,6 @@ function showStorageCartList() {
    cartList.insertAdjacentHTML('beforeend', template);
   }
  } else {
-  cartList.innerHTML = '장바구니가 비었습니다.';
+  cartList.innerHTML = '찜한 상품이 없습니다.';
  }
 }

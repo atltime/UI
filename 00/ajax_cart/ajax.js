@@ -77,7 +77,7 @@ function moreItems(array) {
                 <p class="card-text">${array[idx].title}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <p>가격 : <span>${array[idx].price}</span></p>
-                    <button class="btn btn-primary buy">구매</button>
+                    <button class="btn btn-primary buy">찜</button>
                 </div>
             </div>
         </div>

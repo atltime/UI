@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Sticky</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>
+  <script src="sticky.js" defer></script>
+ </head>
+ <body>
+  <header>
+   <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+     <div class="row">
+      <div class="col-sm-8 col-md-7 py-4">
+       <h4 class="text-white">About</h4>
+       <p class="text-muted">
+        Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some
+        social networking sites or contact information.
+       </p>
+      </div>
+      <div class="col-sm-4 offset-md-1 py-4">
+       <h4 class="text-white">Contact</h4>
+       <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+        <li><a href="#" class="text-white">Like on Facebook</a></li>
+        <li><a href="#" class="text-white">Email me</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="container">
+     <a href="#" class="navbar-brand d-flex align-items-center">
+      <svg
+       xmlns="http://www.w3.org/2000/svg"
+       width="20"
+       height="20"
+       fill="none"
+       stroke="currentColor"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="2"
+       aria-hidden="true"
+       class="me-2"
+       viewBox="0 0 24 24">
+       <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+       <circle cx="12" cy="13" r="4" />
+      </svg>
+      <strong>Products</strong>
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+    </div>
+   </div>
+  </header>
+
+  <main>
+   <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4" />
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+   </div>
+   <div class="cardbox-scroll">
+    <h2>It's as easy<br />as it sounds.</h2>
+    <div class="cardbox"><img src="images/card1.png" alt="" /></div>
+    <div class="cardbox"><img src="images/card2.png" alt="" /></div>
+    <div class="cardbox"><img src="images/card3.png" alt="" /></div>
+   </div>
+   <div class="sticky-scroll">
+    <div class="img-box">
+     <img src="https://images.unsplash.com/photo-1668365187350-05c997d09eba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+    </div>
+    <div class="text" id="text">
+     <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem quisquam voluptas sunt, ducimus repudiandae. Quos mollitia architecto debitis praesentium dolorem vero pariatur
+      possimus reprehenderit magnam eaque! Quasi, maxime maiores.
+     </p>
+
+     <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quae nisi repudiandae minus consectetur animi labore non accusantium quam totam modi illum voluptatem, consequatur quisquam qui
+      neque aliquam at cum.
+     </p>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>

@@ -4,16 +4,9 @@
 const $gnbBtn = document.querySelector('.gnb-btn');
 const $gnbList = document.querySelector('.gnb-list');
 
-const gnbEffectOn = () => {
- $gnbList.classList.value = 'gnb-list';
- $gnbBtn.classList.add('on');
- $gnbList.classList.add('on');
-};
-const gnbEffectOff = () => {
- $gnbList.classList.value = 'gnb-list';
- $gnbBtn.classList.remove('on');
- $gnbList.classList.add('off');
-};
+const gnbEffectOn = () => ($gnbList.classList.value = 'gnb-list on');
+
+const gnbEffectOff = () => ($gnbList.classList.value = 'gnb-list off');
 
 const gnbStatusMap = {
  null: gnbEffectOn,
@@ -22,6 +15,7 @@ const gnbStatusMap = {
 };
 
 $gnbBtn.addEventListener('click', () => {
+ $gnbBtn.classList.toggle('on');
  let el = $gnbList.classList[1];
  return gnbStatusMap[el]();
 });

@@ -14,8 +14,8 @@ const gnbStatusMap = {
  off: gnbEffectOn,
 };
 
-$gnbBtn.addEventListener('click', () => {
- $gnbBtn.classList.toggle('on');
+$gnbBtn.addEventListener('click', (e) => {
+ e.target.classList.toggle('on');
  let el = $gnbList.classList[1];
  return gnbStatusMap[el]();
 });

@@ -4,15 +4,13 @@
 const $gnbBtn = document.querySelector('.gnb-btn');
 const $gnbList = document.querySelector('.gnb-list');
 
-const gnbEffectInit = () => ($gnbList.classList.value = 'gnb-list');
-
 const gnbEffectOn = () => {
- gnbEffectInit();
+ $gnbList.classList.value = 'gnb-list';
  $gnbBtn.classList.add('on');
  $gnbList.classList.add('on');
 };
 const gnbEffectOff = () => {
- gnbEffectInit();
+ $gnbList.classList.value = 'gnb-list';
  $gnbBtn.classList.remove('on');
  $gnbList.classList.add('off');
 };

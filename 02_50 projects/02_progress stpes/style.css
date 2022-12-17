@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");:root { --line-border-fill: #3498db; --line-border-empty: #e0e0e0; } 
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; } 
+
+body { margin: 0; background-color: #fdfdfd; font-family: "Muli", sans-serif; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100vh; overflow: hidden; } 
+
+.container { text-align: center; } 
+
+.progress-container { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 30px; max-width: 100%; width: 350px; } 
+.progress-container:before { content: ""; position: absolute; top: 50%; left: 0; height: 4px; width: 100%; background-color: var(--line-border-empty); -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; -webkit-transition: 0.4s ease; transition: 0.4s ease; } 
+.progress-container .progress { position: absolute; top: 50%; left: 0; height: 4px; width: 0%; background-color: var(--line-border-fill); -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; -webkit-transition: 0.4s ease; transition: 0.4s ease; } 
+.progress-container .circle { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 30px; height: 30px; color: #999; background-color: #fff; border-radius: 50%; border: 3px solid var(--line-border-empty); -webkit-transition: 0.4s ease; transition: 0.4s ease; } 
+.progress-container .circle.active { border-color: var(--line-border-fill); } 
+
+.btn { margin: 5px; padding: 8px 30px; font-size: 14px; color: #fff; background-color: var(--line-border-fill); border: 0; border-radius: 6px; cursor: pointer; } 
+.btn:active { -webkit-transform: scale(0.98); transform: scale(0.98); } 
+.btn:focus { outline: 0; } 
+.btn:disabled { background-color: var(--line-border-empty); cursor: not-allowed; } 

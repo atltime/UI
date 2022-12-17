@@ -7,6 +7,8 @@
 .AppleDouble
 .LSOverride
 css/
+00/*.css
+00/*/*.css
 *.scss
 sass/
 images/

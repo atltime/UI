@@ -1,23 +1,78 @@
-* { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; } 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-body { background: rgb(38, 37, 38); } 
+body {
+  background: rgb(38, 37, 38);
+}
 
-.loading { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } 
-.loading .percent { color: #999; font-size: 5rem; font-weight: 400; text-align: center; margin-bottom: 1rem; } 
-.loading .text { display: none; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); font-size: 0.7em; line-height: 21px; color: #fff; opacity: 0.5; } 
-.loading .progress-bar { width: 406px; height: 21px; background-color: rgb(121, 121, 121); border-radius: 13px; padding: 3px; } 
-.loading .progress { width: 200px; height: 15px; background-color: #f60d54; border-radius: 13px; } 
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.loading .percent {
+  color: #999;
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.loading .text {
+  display: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0.7em;
+  line-height: 21px;
+  color: #fff;
+  opacity: 0.5;
+}
+.loading .progress-bar {
+  width: 406px;
+  height: 21px;
+  background-color: rgb(121, 121, 121);
+  border-radius: 13px;
+  padding: 3px;
+}
+.loading .progress {
+  width: 200px;
+  height: 15px;
+  background-color: #f60d54;
+  border-radius: 13px;
+}
 
-.text-blink { -webkit-animation: blink 0.7s ease-in-out 0.1s; animation: blink 0.7s ease-in-out 0.1s; } 
+.text-blink {
+  -webkit-animation: blink 0.7s ease-in-out 0.1s;
+          animation: blink 0.7s ease-in-out 0.1s;
+}
 
-@-webkit-keyframes blink { 
- 0% { opacity: 1; } 
- 50% { opacity: 0.2; } 
- 0% { opacity: 1; } 
- }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  0% {
+    opacity: 1;
+  }
+}
 
-@keyframes blink { 
- 0% { opacity: 1; } 
- 50% { opacity: 0.2; } 
- 0% { opacity: 1; } 
- }
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  0% {
+    opacity: 1;
+  }
+}

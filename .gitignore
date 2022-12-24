@@ -12,6 +12,7 @@ css/
 *.scss
 sass/
 images/
+media/
 
 # Icon must end with two \r
 Icon

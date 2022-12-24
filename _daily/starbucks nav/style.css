@@ -1,0 +1,97 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #f6f5ef 84.391px, #2c2a29 84.391px);
+  height: 84.391px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+}
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+header .container h1 {
+  margin-top: 29px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header nav {
+  padding: 10px 0 0;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+header nav ul a {
+  color: #333;
+}
+header .top-menu {
+  gap: 20px;
+}
+header .main-menu {
+  margin-top: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header .main-menu > li {
+  line-height: 40px;
+}
+header .main-menu > li > a {
+  display: block;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+header .main-menu > li > a:hover {
+  background-color: #2c2a29;
+  color: #669900;
+}
+header .main-menu > li.active > a {
+  background-color: #2c2a29;
+  color: #669900;
+}
+header .main-menu .submenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84.391px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  display: none;
+}
+header .main-menu .submenu > dt > a {
+  color: #fff;
+}
+header .main-menu .submenu > dd > a {
+  color: #999;
+}
+header .main-menu > li:hover .submenu {
+  display: block;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 94.391px;
+}

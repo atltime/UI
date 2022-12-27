@@ -77,6 +77,13 @@ h3 {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+.cup > .remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.cup > .remained small {
+  font-size: 12px;
+}
 .cup.cup-small {
   width: 50px;
   height: 95px;
@@ -89,6 +96,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 5px;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
@@ -109,4 +119,28 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 280px;
+}
+
+.percentage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: var(--fill-color);
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 10px 0;
 }
